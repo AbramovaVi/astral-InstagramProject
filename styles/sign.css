@@ -1,0 +1,87 @@
+.signup {
+    position: absolute;
+    width: 393px;
+    height: 530px;
+    left: 444px;
+    top: 154px;
+
+    background: white;
+    z-index: 10;
+    box-shadow: gray;
+}
+
+.signin {
+    position: absolute;
+    width: 393px;
+    height: 400px;
+    left: 444px;
+    top: 154px;
+
+    background: white;
+    z-index: 10;
+    box-shadow: gray;
+}
+
+.modal-nav button {
+    border: none;
+    color: #07319D;
+    font-size: 10px;
+    line-height: 9px;
+
+}
+
+.modal-title {
+    font-size: 24px;
+    line-height: 20px;
+    margin-left: 56px;
+    margin-top: 50px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form input {
+    width: 285px;
+    border: none;
+    border-bottom: 1px solid #dde2e8;
+    margin: 20px;
+    margin-left: 56px;
+    padding-bottom: 10px;
+    outline: none;
+}
+
+.modal-nav {
+    font-size: 10px;
+    line-height: 9px;
+    margin: 17px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-nav span {
+    margin-top: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.button__blue {
+    width: 281px;
+    height: 36px;
+
+    margin: 48px 56px;
+
+    color: white;
+    background: #07319D;
+    border-radius: 4px;
+}

@@ -1,0 +1,8 @@
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-left: 104px;
+    justify-content: space-between;
+    width: calc(100% - 208px);
+}

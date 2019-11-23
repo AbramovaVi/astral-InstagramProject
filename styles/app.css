@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+}
+
+body {
+    padding-top: 32px;
+    /*padding-right: 50px;*/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 500;
+}
+
+.main-logo {
+    font-family: Lobster, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+
+    width: 200px;
+    height: 60px;
+    margin-left: 104px;
+}
+
+a {
+    text-decoration: none;
+    color: #07319D;
+}
+
+.nav-buttons__login {
+    width: 130px;
+    height: 36px;
+    position: relative;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    background: #07319D;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.nav-buttons__signup {
+    width: 150px;
+    height: 36px;
+    border: none;
+    margin-left: 15px;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #07319D;
+}
+
+.nav-buttons {
+    float: right;
+    margin-top: 15px;
+    margin-right: 104px;
+    /*position: relative;*/
+}
