@@ -18,9 +18,7 @@ const images = [
   thirdImage
 ];
 
-const Feed = () => {
-  const data = JSON.parse(localStorage.getItem('posts'));
-
+const Feed = ({ data }) => {
   return (
     <div className="feed">
       {data.map((item, index) => (

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useData } from '../utils/dataHook';
 import { getData } from '../utils/index';
 
 import SignUp from './SignUp';
@@ -10,13 +11,18 @@ import { posts } from '../post';
 import { users } from '../post';
 
 const App = () => {
-  getData().then(res => {
-    if (!localStorage.getItem('posts')) {
-      localStorage.setItem('posts', JSON.stringify(data.posts));
-    }
-    if (!localStorage.getItem('users')) {
-      localStorage.setItem('users', JSON.stringify(res.data.users));
-    }
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    getData().then(res => {
+      if (!localStorage.getItem('posts')) {
+        localStorage.setItem('posts', JSON.stringify(res.data.posts));
+      }
+      if (!localStorage.getItem('users')) {
+        localStorage.setItem('users', JSON.stringify(res.data.users));
+      }
+      setData(res.data.posts);
+    });
   });
 
   // localStorage.setItem('posts',JSON.stringify(posts));
@@ -56,7 +62,7 @@ const App = () => {
           Зарегистрироваться
         </button>
       </div>
-      <Feed />
+      <Feed data={data} />
       {signUpIsOpen && (
         <SignUp redirectModal={redirectModal} closeModal={closeModal} />
       )}
